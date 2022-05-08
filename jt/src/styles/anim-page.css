@@ -35,3 +35,17 @@
     top: 25%;
     left: 20%;
 }
+
+.choose-animation .want:hover {
+    background-color: #6c969d;
+    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+    width: 100%;
+    height: 100%;
+}
+
+.choose-animation .need:hover {
+    background-color: #6c969d;
+    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+    width: 100%;
+    height: 100%;
+}
