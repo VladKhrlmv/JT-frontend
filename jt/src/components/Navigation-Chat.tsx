@@ -1,28 +1,25 @@
-import g from '../icons/globe_white.svg'
-import PoMocno from '../icons/PoMOCNO.svg'
-import globe from '../icons/globe_white.svg'
-import info from '../icons/info_white.svg'
+import '../styles/chat-nav.css'
 
 const NavigationChat = () =>  {
   return (
         <div className='Interface'>
-        <img src={PoMocno} className='title' alt='Pomocno'/>
-        <img src={globe} alt='globe' className='globe' />
-        <img src={info} alt='info' className='info' />
+        <img src='../../public/icons/PoMOCNO.svg' className='title' alt='Pomocno'/>
+        <img src='../../public/icons/globe_white.svg' alt='globe' className='globe' />
+        <img src='../../public/icons/info_white.svg' alt='info' className='info' />
     <div className='buttonPosition'>
       
           <a className='new'>
-            <img src={g} alt="new" className='new' />
+            <img src='../../public/icons/globe_white.svg' alt="new" className='new' />
             <span>new</span>
           </a>
           
           <a className='active'>
-            <img src="../icons/globe_white.svg" alt ='active' className='active'/>
+            <img src='../../public/icons/globe_white.svg' alt ='active' className='active'/>
             <span>active</span>
           </a>
 
             <a className='archive'>
-            <img src="../icons/globe_white.svg" alt ='archive' className='archive'/>
+            <img src='../../public/icons/globe_white.svg' alt ='archive' className='archive'/>
             <span >archives</span>
             </a>   
       </div>
