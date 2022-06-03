@@ -1,0 +1,33 @@
+[data-theme="want"] {
+    /* --primary-color: #9A97F3; */
+    /* --secondary-color: #818cab; */
+    /* --font-color: #e1e1ff; */
+    --bg-color: #6C969D;
+    /* --heading-color: #818cab; */
+}
+
+[data-theme="need"] {
+    /* --primary-color: #9A97F3; */
+    /* --secondary-color: #818cab; */
+    /* --font-color: #e1e1ff; */
+    --bg-color: #99d5c9;
+    /* --heading-color: #818cab; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: inline-flex;
+    width: 20vw;
+    position: relative;
+    margin: 30px 0 0 20px;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: #6C969D;
+}

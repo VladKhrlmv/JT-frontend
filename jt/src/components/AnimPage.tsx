@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/anim-page.css';
 
 const AnimPage = () => {
@@ -14,20 +15,28 @@ const AnimPage = () => {
 
 	return (
 		<div className="choose-animation">
-			<div
-				ref={need}
-				className="need"
-				onMouseOver={() => {
-					changeShape(need, '0 0, 0 112%, 112% 0');
-					changeShape(want, '0 112%, 112% 0, 100% 100%');
-				}}
-				onMouseOut={() => {
-					changeShape(need, '0 0, 0 100%, 100% 0');
-					changeShape(want, '0 100%, 100% 0, 100% 100%');
-				}}
-			>
-				<span>I need help</span>
-			</div>
+			<Link to="/home">
+				<div
+					ref={need}
+					className="need"
+					onMouseOver={() => {
+						changeShape(need, '0 0, 0 112%, 112% 0');
+						changeShape(want, '0 112%, 112% 0, 100% 100%');
+					}}
+					onMouseOut={() => {
+						changeShape(need, '0 0, 0 100%, 100% 0');
+						changeShape(want, '0 100%, 100% 0, 100% 100%');
+					}}
+					onClick={() => {
+						document.documentElement.setAttribute(
+							'data-theme',
+							'need'
+						);
+					}}
+				>
+					<span>I need help</span>
+				</div>
+			</Link>
 			<div
 				ref={want}
 				className="want"
@@ -38,6 +47,9 @@ const AnimPage = () => {
 				onMouseOut={() => {
 					changeShape(want, '0 100%, 100% 0, 100% 100%');
 					changeShape(need, '0 0, 0 100%, 100% 0');
+				}}
+				onClick={() => {
+					document.documentElement.setAttribute('data-theme', 'want');
 				}}
 			>
 				<span>I want to help</span>
