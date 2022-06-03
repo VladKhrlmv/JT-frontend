@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './styles/index.css';
 import AnimPage from './components/AnimPage';
 import MainPage from './components/MainPage';
@@ -16,9 +16,10 @@ const App = () => {
 root.render(
 	<React.StrictMode>
 		<BrowserRouter>
-			<Route path="/" element={<App />}>
+			<Routes>
+				<Route path="/" element={<App />} />
 				<Route path="home" element={<MainPage />} />
-			</Route>
+			</Routes>
 		</BrowserRouter>
 	</React.StrictMode>
 );

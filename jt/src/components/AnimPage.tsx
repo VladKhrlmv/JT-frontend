@@ -37,23 +37,28 @@ const AnimPage = () => {
 					<span>I need help</span>
 				</div>
 			</Link>
-			<div
-				ref={want}
-				className="want"
-				onMouseOver={() => {
-					changeShape(want, '-12% 100%, 100% -12%, 100% 100%');
-					changeShape(need, '0 0, -12% 100%, 100% -12%');
-				}}
-				onMouseOut={() => {
-					changeShape(want, '0 100%, 100% 0, 100% 100%');
-					changeShape(need, '0 0, 0 100%, 100% 0');
-				}}
-				onClick={() => {
-					document.documentElement.setAttribute('data-theme', 'want');
-				}}
-			>
-				<span>I want to help</span>
-			</div>
+			<Link to="/home">
+				<div
+					ref={want}
+					className="want"
+					onMouseOver={() => {
+						changeShape(want, '-12% 100%, 100% -12%, 100% 100%');
+						changeShape(need, '0 0, -12% 100%, 100% -12%');
+					}}
+					onMouseOut={() => {
+						changeShape(want, '0 100%, 100% 0, 100% 100%');
+						changeShape(need, '0 0, 0 100%, 100% 0');
+					}}
+					onClick={() => {
+						document.documentElement.setAttribute(
+							'data-theme',
+							'want'
+						);
+					}}
+				>
+					<span>I want to help</span>
+				</div>
+			</Link>
 		</div>
 	);
 };
