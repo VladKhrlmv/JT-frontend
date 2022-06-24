@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap');
 
-.choose-animation {
+.choose_animation {
 	position: relative;
 	z-index: 25;
 	width: 100vw;
@@ -9,7 +9,7 @@
 	font-size: 2.5em;
 }
 
-.choose-animation .need {
+.choose_animation .need {
 	position: absolute;
 	background-color: #99d5c9;
 	clip-path: polygon(0 0, 0 100%, 100% 0);
@@ -19,7 +19,7 @@
 	color: white;
 }
 
-.choose-animation .want {
+.choose_animation .want {
 	position: absolute;
 	background-color: #6c969d;
 	clip-path: polygon(0 100%, 100% 0, 100% 100%);
@@ -29,34 +29,34 @@
 	color: white;
 }
 
-.choose-animation .want span {
+.choose_animation .want span {
 	position: absolute;
 	bottom: 25%;
 	right: 20%;
 	transition: all 0.75s ease-out;
 }
 
-.choose-animation .need span {
+.choose_animation .need span {
 	position: absolute;
 	top: 25%;
 	left: 20%;
 	transition: all 0.75s ease-out;
 }
 
-.choose-animation .need:hover {
+.choose_animation .need:hover {
 	z-index: 100;
 	transition: all 0.75s ease-out;
 }
 
-.choose-animation .want:hover {
+.choose_animation .want:hover {
 	z-index: 100;
 	transition: all 0.75s ease-out;
 }
 
-.choose-animation .need:hover span {
+.choose_animation .need:hover span {
 	font-size: 1.5em;
 }
 
-.choose-animation .want:hover span {
+.choose_animation .want:hover span {
 	font-size: 1.5em;
 }
