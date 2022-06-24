@@ -4,22 +4,27 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './styles/index.css';
 import AnimPage from './components/AnimPage';
 import MainPage from './components/MainPage';
+import { store } from './state';
+import { Provider } from 'react-redux';
 
 const root = ReactDOM.createRoot(
 	document.getElementById('root') as HTMLElement
 );
 
 const App = () => {
-	return <AnimPage />;
+	return (
+		<Routes>
+			<Route path="/" element={<AnimPage />} />
+			<Route path="home" element={<MainPage />} />
+			<Route path="home" element={<MainPage />} />
+		</Routes>
+	);
 };
 
 root.render(
-	<React.StrictMode>
+	<Provider store={store}>
 		<BrowserRouter>
-			<Routes>
-				<Route path="/" element={<App />} />
-				<Route path="home" element={<MainPage />} />
-			</Routes>
+			<App />
 		</BrowserRouter>
-	</React.StrictMode>
+	</Provider>
 );

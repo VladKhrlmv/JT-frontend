@@ -1,4 +1,4 @@
-import '../styles/chat-nav.css';
+import 'styles/chat-nav.css';
 
 const NavigationChat = () => {
 	return (
