@@ -1,0 +1,43 @@
+.sidenav {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	padding-top: 0.5em;
+	overflow-y: visible;
+}
+
+.sidenav a {
+	padding: 8px 16px 8px 0;
+	text-decoration: none;
+	font-family: 'Comfortaa';
+	font-size: 1.7em;
+	color: #fff;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidenav_items {
+	width: 0;
+	height: 0;
+	overflow-x: hidden;
+	transition: all 0.5s ease;
+}
+
+.arrow {
+	float: left;
+	margin-right: 1em;
+	margin-top: 0.3em;
+	color: #fff;
+}
+
+.sidenav:hover .sidenav_items {
+	width: 140px;
+	height: 100%;
+}
+
+.sidenav:hover .arrow {
+	transform: rotate(180deg);
+	margin-right: 2em;
+	margin-top: 0.1em;
+}

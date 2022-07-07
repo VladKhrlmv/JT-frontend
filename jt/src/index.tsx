@@ -6,6 +6,7 @@ import AnimPage from './components/AnimPage';
 import MainPage from './components/MainPage';
 import { store } from './state';
 import { Provider } from 'react-redux';
+import './i18n/config';
 
 const root = ReactDOM.createRoot(
 	document.getElementById('root') as HTMLElement
