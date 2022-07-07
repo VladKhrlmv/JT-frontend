@@ -14,6 +14,10 @@ i18n.use(initReactI18next).init({
 	},
 	ns: ['translations'],
 	defaultNS: 'translations',
+	keySeparator: true,
+	interpolation: {
+		escapeValue: false,
+	},
 });
 
 i18n.languages = ['en', 'es'];

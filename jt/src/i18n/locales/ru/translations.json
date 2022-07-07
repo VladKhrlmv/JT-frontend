@@ -1,4 +1,20 @@
 {
-	"home": "Главная",
-	"page2": "Страница 2"
+	"sidenav-items": {
+		"need": {
+			"home": "home",
+			"chat": "chat",
+			"account": "account",
+			"settings": "settings",
+			"help": "help"
+		},
+		"volunteer": {
+			"home": "home",
+			"chat": "chat",
+			"account": "account",
+			"settings": "settings",
+			"logout": "logout",
+			"help": "help"
+		}
+	},
+	"home": "homsadfasde"
 }
