@@ -1,0 +1,20 @@
+{
+	"sidenav-items": {
+		"need": {
+			"home": "home",
+			"chat": "chat",
+			"account": "account",
+			"settings": "settings",
+			"help": "help"
+		},
+		"volunteer": {
+			"home": "home",
+			"chat": "chat",
+			"account": "account",
+			"settings": "settings",
+			"logout": "logout",
+			"help": "help"
+		}
+	},
+	"home": "homsadfasde"
+}

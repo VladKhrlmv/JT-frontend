@@ -1,19 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './styles/index.css';
 import AnimPage from './components/AnimPage';
-import NavigationChat from './components/Navigation-Chat';
+import MainPage from './components/MainPage';
+import { store } from './state';
+import { Provider } from 'react-redux';
+import './i18n/config';
 
 const root = ReactDOM.createRoot(
 	document.getElementById('root') as HTMLElement
 );
 
 const App = () => {
-	return <><NavigationChat /></>;
+	return (
+		<Routes>
+			<Route path="/" element={<AnimPage />} />
+			<Route path="home" element={<MainPage />} />
+			<Route path="home" element={<MainPage />} />
+		</Routes>
+	);
 };
 
 root.render(
-	<React.StrictMode>
-		<App />
-	</React.StrictMode>
+	<Provider store={store}>
+		<BrowserRouter>
+			<App />
+		</BrowserRouter>
+	</Provider>
 );

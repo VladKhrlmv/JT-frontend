@@ -1,0 +1,17 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper img {
+	display: inline-flex;
+	width: 15vw;
+	position: relative;
+	margin: 20px 0 0 10px;
+}
+
+.wrapper {
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--bg-color);
+}
