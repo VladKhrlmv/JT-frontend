@@ -1,0 +1,61 @@
+.container {
+	width: clamp(400px, 35vw, 30vw);
+	height: 85vh;
+	background-color: #fff;
+	margin: auto auto;
+	display: flex;
+	flex-direction: column;
+	border-radius: 75px;
+	box-shadow: 20px 20px 1px #00000029;
+}
+
+.greeting,
+.login {
+	font-family: 'Comfortaa';
+	font-size: 1.8em;
+	text-align: center;
+}
+
+.greeting {
+	margin: 2em 0 0.5em 0;
+}
+.login {
+	margin-bottom: 15%;
+}
+
+.username,
+.password {
+	width: 75%;
+	margin: 0 auto;
+	margin-bottom: 1.5em;
+	border-radius: 14px;
+	height: 2em;
+	border: 1px solid #707070;
+	padding-left: 1.6em;
+	font-size: 1.5em;
+}
+
+.username_label,
+.password_label {
+	font-size: 1em;
+	margin: 0.5em 0 0.5em 15%;
+	font-weight: bold;
+}
+
+.login_button {
+	width: 30%;
+	height: 2em;
+	margin: 8% auto;
+	border-radius: 20px;
+	border: none;
+	background-color: #99d5c9;
+	color: #fff;
+	font-family: 'Comfortaa';
+	text-transform: lowercase;
+	font-size: 1.5em;
+	box-shadow: 6px 6px 1px #00000029;
+}
+
+.register_link {
+	text-align: center;
+}

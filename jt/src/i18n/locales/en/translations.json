@@ -4,5 +4,10 @@
 	"sidenav.account": "account",
 	"sidenav.settings": "settings",
 	"sidenav.help": "help",
-	"sidenav.logout": "logout"
+	"sidenav.logout": "logout",
+	"login.greeting": "Glad to see you back!",
+	"login.title": "Log in",
+	"login.password": "Password",
+	"login.username": "Username",
+	"login.no_account": "Don't have an account?"
 }
