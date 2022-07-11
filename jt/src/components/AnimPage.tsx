@@ -36,7 +36,7 @@ const AnimPage = () => {
 					<span>I need help</span>
 				</div>
 			</Link>
-			<Link to="/home">
+			<Link to="/login">
 				<div
 					ref={want}
 					className={styles.want}
