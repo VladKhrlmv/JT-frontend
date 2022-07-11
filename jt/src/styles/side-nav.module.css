@@ -1,7 +1,7 @@
 .sidenav {
 	position: fixed;
 	z-index: 1;
-	top: 2em;
+	top: 1em;
 	right: 0;
 	overflow-y: visible;
 }
