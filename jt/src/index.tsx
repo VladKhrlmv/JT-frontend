@@ -26,6 +26,11 @@ const App = () => {
 					</MainPage>
 				}
 			/>
+			<Route path="home" element={<MainPage />} />
+			<Route path="chat" element={<MainPage />} />
+			<Route path="account" element={<MainPage />} />
+			<Route path="settings" element={<MainPage />} />
+			<Route path="help" element={<MainPage />} />
 		</Routes>
 	);
 };
