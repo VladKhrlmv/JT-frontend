@@ -1,14 +1,17 @@
 .sidenav {
 	position: fixed;
 	z-index: 1;
-	top: 0;
+	top: 1em;
 	right: 0;
-	padding-top: 0.5em;
 	overflow-y: visible;
 }
 
 .sidenav a {
-	padding: 8px 16px 8px 0;
+	z-index: 10;
+	padding: 0px 1rem;
+	margin-bottom: 0.9em;
+	width: fit-content;
+	border-radius: 1em;
 	text-decoration: none;
 	font-family: 'Comfortaa';
 	font-size: 1.7em;
@@ -20,26 +23,30 @@
 .sidenav_items {
 	width: 0;
 	height: 0;
+	position: relative;
+	right: -1.5em;
 	overflow-x: hidden;
 	transition: all 0.5s ease;
+	padding-right: 1.5em;
+	padding-top: 0.5em;
 }
 
 .arrow {
 	float: left;
 	margin-right: 1em;
-	margin-top: 0.3em;
 	color: #fff;
-	transition-delay: 0.3s;
+	transition-delay: 0.35s;
+	padding-top: 0.28em;
 }
 
 .sidenav:hover .sidenav_items {
 	width: 140px;
 	height: 100%;
+	position: static;
 }
 
 .sidenav:hover .arrow {
 	transform: rotate(180deg);
 	margin-right: 2em;
-	margin-top: 0.1em;
 	transition-delay: 0s;
 }
