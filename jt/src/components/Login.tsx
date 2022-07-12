@@ -11,7 +11,7 @@ const Login = () => {
 			<p className={styles.greeting}>{t('login.greeting')}</p>
 			<p className={styles.login}>{t('login.title')}</p>
 			<label className={styles.username_label} htmlFor="username">
-				Username
+				{t('login.username')}
 			</label>
 			<input
 				className={styles.username}
@@ -21,7 +21,7 @@ const Login = () => {
 				required
 			/>
 			<label className={styles.password_label} htmlFor="password">
-				Password
+				{t('login.password')}
 			</label>
 			<input
 				className={styles.password}

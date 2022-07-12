@@ -9,5 +9,12 @@
 	"login.title": "Log in",
 	"login.password": "Password",
 	"login.username": "Username",
-	"login.no_account": "Don't have an account?"
+	"login.no_account": "Don't have an account?",
+	"register.greeting": "New to volunteering?",
+	"register.title": "Register now",
+	"register.password": "Password",
+	"register.repeat_password": "Repeat password",
+	"register.username": "Username",
+	"register.sign_in": "Sign in",
+	"register.have_account": "Already have an account?"
 }

@@ -9,6 +9,7 @@ const SideNav = () => {
 	// const { role } = useSelector((state) => state.role);
 	const { t } = useTranslation();
 	let sidenav_items = ['home', 'chat', 'account', 'settings', 'help'];
+	const { role } = useSelector((state) => state.role);
 
 	return (
 		<div className={styles.sidenav}>
@@ -24,7 +25,11 @@ const SideNav = () => {
 									boxShadow: isActive
 										? '10px 10px 1px #00000029'
 										: '',
-									backgroundColor: isActive ? '#99D5C9' : '',
+									backgroundColor: isActive
+										? role === 'volunteer'
+											? '#99D5C9'
+											: '#6C969D'
+										: '',
 								};
 							}}
 							to={`/${item}`}

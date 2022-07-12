@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './styles/index.css';
 import AnimPage from './components/AnimPage';
 import MainPage from './components/MainPage';
+import Register from './components/Register';
 import { store } from './state';
 import { Provider } from 'react-redux';
 import './i18n/config';
@@ -26,7 +27,14 @@ const App = () => {
 					</MainPage>
 				}
 			/>
-			<Route path="home" element={<MainPage />} />
+			<Route
+				path="register"
+				element={
+					<MainPage>
+						<Register />
+					</MainPage>
+				}
+			/>
 			<Route path="chat" element={<MainPage />} />
 			<Route path="account" element={<MainPage />} />
 			<Route path="settings" element={<MainPage />} />
