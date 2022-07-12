@@ -73,7 +73,7 @@ const Register = () => {
 				onChange={onInputChange}
 				onBlur={validateInput}
 			/>
-			<Link to="/login" className={styles.login_link}>
+			<Link to="/v/login" className={styles.login_link}>
 				{t('register.have_account')}
 			</Link>
 

@@ -17,7 +17,7 @@ const AnimPage = () => {
 
 	return (
 		<div className={styles.choose_animation}>
-			<Link to="/home">
+			<Link to="/n/home">
 				<div
 					ref={need}
 					className={styles.need}
@@ -36,7 +36,7 @@ const AnimPage = () => {
 					<span>I need help</span>
 				</div>
 			</Link>
-			<Link to="/login">
+			<Link to="/v/login">
 				<div
 					ref={want}
 					className={styles.want}

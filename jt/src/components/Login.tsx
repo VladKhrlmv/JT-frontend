@@ -30,7 +30,7 @@ const Login = () => {
 				placeholder="Password"
 				required
 			/>
-			<Link to="/register" className={styles.register_link}>
+			<Link to="/v/register" className={styles.register_link}>
 				{t('login.no_account')}
 			</Link>
 			<button className={styles.login_button}>{t('login.title')}</button>
