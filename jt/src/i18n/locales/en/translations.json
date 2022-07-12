@@ -16,5 +16,7 @@
 	"register.repeat_password": "Repeat password",
 	"register.username": "Username",
 	"register.sign_in": "Sign in",
-	"register.have_account": "Already have an account?"
+	"register.have_account": "Already have an account?",
+	"error.title": "Something went wrong",
+	"error.message": "Please go back to initial page and try again"
 }
