@@ -10,6 +10,7 @@ const SideNav = () => {
 	const { t } = useTranslation();
 	let sidenav_items = ['home', 'chat', 'account', 'settings', 'help'];
 	const { role } = useSelector((state) => state.role);
+	const role_route = role === 'volunteer' ? 'v' : 'n';
 
 	return (
 		<div className={styles.sidenav}>
@@ -20,6 +21,7 @@ const SideNav = () => {
 				{sidenav_items.map((item) => {
 					return (
 						<NavLink
+							key={item}
 							style={({ isActive }) => {
 								return {
 									boxShadow: isActive
@@ -32,7 +34,7 @@ const SideNav = () => {
 										: '',
 								};
 							}}
-							to={`/${item}`}
+							to={`/${role_route}/${item}`}
 						>
 							{t(`sidenav.${item}`)}
 						</NavLink>
