@@ -3,7 +3,7 @@
 	padding: 0;
 }
 
-.wrapper img {
+.logo {
 	display: inline-flex;
 	width: 15vw;
 	position: relative;
@@ -13,5 +13,5 @@
 .wrapper {
 	width: 100vw;
 	height: 100vh;
-	background-color: var(--bg-color);
+	background-color: var(--primary-color);
 }
