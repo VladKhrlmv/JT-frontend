@@ -25,6 +25,9 @@
 	"createchat.go_back": "Go back",
 	"createchat.accept": "Accept",
 	"chatmenu.cant_help": "Can't help",
+	"chatmenu.done": "Done",
 	"chatmenu.report": "Report",
-	"chat.message_input_placeholder": "Write your message here..."
+	"chat.message_input_placeholder": "Write your message here...",
+	"filler-message.title": "Nothing new here)",
+	"filler-message.subtitle": "Please reload the page or wait for the updates"
 }

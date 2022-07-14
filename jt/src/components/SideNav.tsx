@@ -38,6 +38,7 @@ const SideNav = () => {
 						</NavLink>
 					);
 				})}
+				<NavLink to={'/'}>{t('sidenav.logout')}</NavLink>
 			</nav>
 		</div>
 	);

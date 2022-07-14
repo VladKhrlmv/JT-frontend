@@ -11,6 +11,7 @@ import Requests from './components/Requests';
 import ChatPage from './components/ChatPage';
 import CreateChat from './components/CreateChat';
 import ActiveChat from './components/ActiveChat';
+import FillerMessage from './components/FillerMessage';
 import { store } from './state';
 import { Provider } from 'react-redux';
 import { useSelector } from './hooks/useSelector';
@@ -40,6 +41,7 @@ const App = () => {
 								/>
 							</Route>
 							<Route path="active" element={<ActiveChat />} />
+							<Route path="archive" element={<FillerMessage />} />
 						</Route>
 						<Route path="account" element={null} />
 						<Route path="settings" element={null} />
@@ -51,13 +53,12 @@ const App = () => {
 						<Route path="login" element={<Login />} />
 						<Route path="register" element={<Register />} />
 						<Route path="chat" element={<ChatPage />}>
-							<Route path="new" element={<Requests />}>
-								<Route
-									path=":requestId"
-									element={<CreateChat />}
-								/>
-							</Route>
+							<Route
+								path="new"
+								element={<FillerMessage />}
+							></Route>
 							<Route path="active" element={<ActiveChat />} />
+							<Route path="archive" element={<FillerMessage />} />
 						</Route>
 						<Route path="account" element={null} />
 						<Route path="settings" element={null} />

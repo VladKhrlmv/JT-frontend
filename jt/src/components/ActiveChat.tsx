@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useSelector } from '../hooks/useSelector';
 import styles from '../styles/active-chat.module.css';
 import { useTranslation } from 'react-i18next';
 import logo from '../img/globe_white.svg';
@@ -12,6 +13,7 @@ const ActiveChat = () => {
 	const { t } = useTranslation();
 	const navigate = useNavigate();
 
+	const { role } = useSelector((state) => state.role);
 	const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 	const [container, setContainer] = useState<null | HTMLElement>(null);
 	const [input, setInput] = useState('');
@@ -77,7 +79,9 @@ const ActiveChat = () => {
 						className={styles.cant_help}
 						onClick={handleClose}
 					>
-						{t('chatmenu.cant_help')}
+						{role === 'volunteer'
+							? t('chatmenu.cant_help')
+							: t('chatmenu.done')}
 					</MenuItem>
 					<MenuItem className={styles.report} onClick={handleClose}>
 						{t('chatmenu.report')}

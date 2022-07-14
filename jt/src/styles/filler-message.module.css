@@ -1,0 +1,27 @@
+.container {
+	background-color: #fff;
+	height: 20vh;
+	width: 30vw;
+	box-shadow: 10px 10px 0px #00000029;
+	border-radius: 36px;
+	position: absolute;
+	top: 50vh;
+	left: 50vw;
+	transform: translate(-35vw, -25vh);
+}
+
+.title {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #000000;
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.subtitle {
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #000000;
+	text-align: center;
+	margin-top: 1rem;
+}
