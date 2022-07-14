@@ -18,5 +18,8 @@
 	"register.sign_in": "Sign in",
 	"register.have_account": "Already have an account?",
 	"error.title": "Something went wrong",
-	"error.message": "Please go back to initial page and try again"
+	"error.message": "Please go back to initial page and try again",
+	"chatnav.new": "new",
+	"chatnav.active": "active",
+	"chatnav.archive": "archive"
 }

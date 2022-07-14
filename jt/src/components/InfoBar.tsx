@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import styles from '../styles/info-bar.module.css';
-import { useSelector } from '../hooks/useSelector';
 
 type InfoBarPageProps = {
 	content: {
@@ -12,9 +11,6 @@ type InfoBarPageProps = {
 };
 
 const InfoBar = ({ content }: InfoBarPageProps) => {
-	const { role } = useSelector((state) => state.role);
-	let bg_color: string = role === 'volunteer' ? '#6c969d' : '#99d5c9';
-
 	return (
 		<>
 			<div className={styles.container}>
