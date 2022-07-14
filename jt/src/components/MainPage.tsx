@@ -31,10 +31,10 @@ const MainPage = ({ children }: MainPageProps) => {
 	const navigate = useNavigate();
 	let location = useLocation();
 	useEffect(() => {
-		if (location.pathname === '/n') {
+		if (location.pathname === '/n' || location.pathname === '/n/') {
 			navigate('/n/home');
 		}
-		if (location.pathname === '/v') {
+		if (location.pathname === '/v' || location.pathname === '/v/') {
 			navigate('/v/home');
 		}
 	}, [location.pathname]);

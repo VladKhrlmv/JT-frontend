@@ -1,0 +1,4 @@
+.wrapper {
+	position: absolute;
+	margin-left: max(250px, 20%);
+}
