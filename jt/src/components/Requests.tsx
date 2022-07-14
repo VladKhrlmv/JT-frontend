@@ -23,6 +23,7 @@ const Requests = (/*{ contents }: RequestsPageProps*/) => {
 				{arr.map((item) => {
 					return (
 						<InfoBar
+							key={item}
 							requestsContainer={requestsContainerRef}
 							content={{
 								img: logo,

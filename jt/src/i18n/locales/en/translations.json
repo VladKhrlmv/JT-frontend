@@ -23,5 +23,8 @@
 	"chatnav.active": "active",
 	"chatnav.archive": "archive",
 	"createchat.go_back": "Go back",
-	"createchat.accept": "Accept"
+	"createchat.accept": "Accept",
+	"chatmenu.cant_help": "Can't help",
+	"chatmenu.report": "Report",
+	"chat.message_input_placeholder": "Write your message here..."
 }
