@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './styles/index.css';
 import AnimPage from './components/AnimPage';
 import MainPage from './components/MainPage';
 import Register from './components/Register';
 import Login from './components/Login';
 import ErrorPage from './components/ErrorPage';
+import Requests from './components/Requests';
+import ChatPage from './components/ChatPage';
+import CreateChat from './components/CreateChat';
+import ActiveChat from './components/ActiveChat';
+import FillerMessage from './components/FillerMessage';
 import { store } from './state';
 import { Provider } from 'react-redux';
 import { useSelector } from './hooks/useSelector';
@@ -18,7 +23,6 @@ const root = ReactDOM.createRoot(
 
 const App = () => {
 	const { role } = useSelector((state) => state.role);
-	const navigate = useNavigate();
 
 	return (
 		<Routes>
@@ -29,7 +33,16 @@ const App = () => {
 						<Route path="home" element={null} />
 						<Route path="login" element={<Login />} />
 						<Route path="register" element={<Register />} />
-						<Route path="chat" element={null} />
+						<Route path="chat" element={<ChatPage />}>
+							<Route path="new" element={<Requests />}>
+								<Route
+									path=":requestId"
+									element={<CreateChat />}
+								/>
+							</Route>
+							<Route path="active" element={<ActiveChat />} />
+							<Route path="archive" element={<FillerMessage />} />
+						</Route>
 						<Route path="account" element={null} />
 						<Route path="settings" element={null} />
 						<Route path="help" element={null} />
@@ -39,7 +52,14 @@ const App = () => {
 						<Route path="home" element={null} />
 						<Route path="login" element={<Login />} />
 						<Route path="register" element={<Register />} />
-						<Route path="chat" element={null} />
+						<Route path="chat" element={<ChatPage />}>
+							<Route
+								path="new"
+								element={<FillerMessage />}
+							></Route>
+							<Route path="active" element={<ActiveChat />} />
+							<Route path="archive" element={<FillerMessage />} />
+						</Route>
 						<Route path="account" element={null} />
 						<Route path="settings" element={null} />
 						<Route path="help" element={null} />

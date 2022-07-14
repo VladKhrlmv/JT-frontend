@@ -28,9 +28,7 @@ const SideNav = () => {
 										? '10px 10px 1px #00000029'
 										: '',
 									backgroundColor: isActive
-										? role === 'volunteer'
-											? '#99D5C9'
-											: '#6C969D'
+										? 'var(--secondary-color)'
 										: '',
 								};
 							}}
@@ -40,6 +38,7 @@ const SideNav = () => {
 						</NavLink>
 					);
 				})}
+				<NavLink to={'/'}>{t('sidenav.logout')}</NavLink>
 			</nav>
 		</div>
 	);

@@ -1,0 +1,28 @@
+.chatnav {
+	width: fit-content;
+	margin: 10em 0 0 2.2em;
+	position: absolute;
+}
+
+.chatnav_item {
+	color: #fff;
+
+	margin-bottom: 1.3em;
+}
+
+.chatnav_item a {
+	color: #fff;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	z-index: 10;
+	padding: 0.3rem 0 0.3rem 1rem;
+	border-radius: 1em;
+	text-decoration: none;
+	font-family: 'Comfortaa';
+	font-size: 1.4em;
+}
+
+.icon {
+	margin-right: 0.3em;
+}

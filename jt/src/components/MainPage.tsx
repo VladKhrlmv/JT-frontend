@@ -11,16 +11,30 @@ type MainPageProps = {
 
 const MainPage = ({ children }: MainPageProps) => {
 	const { role } = useSelector((state) => state.role);
-	let bg_color: string = role === 'volunteer' ? '#6c969d' : '#99d5c9';
-	document.documentElement.style.setProperty('--bg-color', bg_color);
+	let primary_color: string = '#99d5c9';
+	let secondary_color: string = '#6c969d';
+	if (role === 'volunteer') {
+		primary_color = '#6c969d';
+		secondary_color = '#99d5c9';
+	}
+
+	document.documentElement.style.setProperty(
+		'--primary-color',
+		primary_color
+	);
+
+	document.documentElement.style.setProperty(
+		'--secondary-color',
+		secondary_color
+	);
 
 	const navigate = useNavigate();
 	let location = useLocation();
 	useEffect(() => {
-		if (location.pathname === '/n') {
+		if (location.pathname === '/n' || location.pathname === '/n/') {
 			navigate('/n/home');
 		}
-		if (location.pathname === '/v') {
+		if (location.pathname === '/v' || location.pathname === '/v/') {
 			navigate('/v/home');
 		}
 	}, [location.pathname]);
@@ -29,7 +43,7 @@ const MainPage = ({ children }: MainPageProps) => {
 		<>
 			<SideNav />
 			<div className={styles.wrapper}>
-				<img src={logo} alt="pomocno logo" />
+				<img className={styles.logo} src={logo} alt="pomocno logo" />
 				<Outlet />
 			</div>
 		</>
