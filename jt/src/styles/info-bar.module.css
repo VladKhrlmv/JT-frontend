@@ -3,6 +3,7 @@
 	height: fit-content;
 	display: flex;
 	margin-bottom: 1em;
+	cursor: pointer;
 }
 
 .container:last-child {

@@ -9,7 +9,6 @@
 
 .container::-webkit-scrollbar {
 	display: block;
-
 	height: 90%;
 }
 

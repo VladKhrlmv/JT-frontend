@@ -21,5 +21,7 @@
 	"error.message": "Please go back to initial page and try again",
 	"chatnav.new": "new",
 	"chatnav.active": "active",
-	"chatnav.archive": "archive"
+	"chatnav.archive": "archive",
+	"createchat.go_back": "Go back",
+	"createchat.accept": "Accept"
 }
